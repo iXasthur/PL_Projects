@@ -70,9 +70,7 @@ int main(int argc, const char * argv[]) {
                 printf("Invalid input\n");
                 break;
         }
-        
-        
-        
     }
+    
     return 0;
 }
