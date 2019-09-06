@@ -42,7 +42,7 @@ void task26(){
     printf("\n\n");
 }
 
-int main(int argc, const char * argv[]) {
+int main() {
     int x, rdyToExit = 0, infoIsShown = 0;
     
     while (rdyToExit != 1) {
