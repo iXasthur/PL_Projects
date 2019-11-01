@@ -127,7 +127,7 @@ void clearList(struct list_s *head){
 }
 
 void fillListWithSampleData(struct list_s *head){
-    const struct item buff[] = {{"Slave Ilya Baryko",1000},{"MacBook Pro 13\' 2019",1750},{"Minecraft license",30},{"Book \"History of Anime\"",20},{"Belt of Li Kai",100000}};
+    const struct item buff[] = {{"Ethereum",1000},{"IOTA",1},{"EOS",20},{"Cardano",2},{"Bitcoin",20000}};
     long unsigned count = sizeof(buff)/sizeof(struct item);
     long unsigned i = 0;
     while (i<count) {
