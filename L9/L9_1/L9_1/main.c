@@ -96,6 +96,20 @@ void getTreeDepth(struct TreeElement *head, int depth, int *maxDepth){
     }
 }
 
+void getTreeMaxElement(struct TreeElement *head, int *max){
+    if (head != NULL) {
+        if (*max < head->key) {
+            *max = head->key;
+        }
+        if (head->left != NULL) {
+            getTreeMaxElement(head->left, max);
+        }
+        if (head->right != NULL) {
+            getTreeMaxElement(head->right, max);
+        }
+    }
+}
+
 int getIntLength(int v){
     int ret = 0;
     while (v != 0) {
@@ -190,7 +204,10 @@ int main() {
     outputTree(head);
     printf("\n");
     
-    removeElementFromTree(&head, 10);
+    int max = head->key;
+    getTreeMaxElement(head, &max);
+    printf("Max element: %d\n", max);
+    removeElementFromTree(&head, max);
     printf("\n");
     
     outputTree(head);
