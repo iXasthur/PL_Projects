@@ -1,0 +1,1 @@
+rm ./a.out; rm ./lex.yy.c; flex MDownFlex.l; gcc lex.yy.c; ./a.out
