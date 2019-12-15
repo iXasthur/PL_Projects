@@ -167,13 +167,13 @@ void outoutTreeHZ(struct TreeElement *head, int xOffest){
     strcat(buffStr, numStr);
     
     printf("%s\n",buffStr);
-    
-    if (head->left != NULL) {
-        outoutTreeHZ(head->left, xOffest+numLength*2);
-    }
     if (head->right != NULL) {
         outoutTreeHZ(head->right, xOffest+numLength*2);
     }
+    if (head->left != NULL) {
+        outoutTreeHZ(head->left, xOffest+numLength*2);
+    }
+
 }
 
 void outputTree(struct TreeElement *head){
